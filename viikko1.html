@@ -1,0 +1,103 @@
+
+<!DOCTYPE html> <!-- Jokaisen html tiedoston pitää alkaa tällä elementillä-->
+<html lang="fi"> <!-- kertoo selaimelle, että kyseessä suomenkielinen dokkari (attribuutti),määrittä siis kielen-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viikko 1 - Oppimispäiväkirja</title> 
+    <script type="module" src="./assets/components/html-css-viewer.js"></script>
+    <style>
+      body {
+        background-color: beige;
+      }
+
+      body {
+        width:80%;
+        max-width:800px;
+        margin: 0 auto; 
+      }
+
+      
+      img {
+        display:block;
+        width: 50%;
+        max-width: 100%;
+        /* kommentti CSS:n sisällä!, sama kuin Java Sciptissä*/
+        margin: 0 auto;
+    }
+    .Halloween {
+        display:inline;
+        width: auto;
+        height: 20px
+          /* jos haluaisi Halloween kuvan tekstirivien keskelle, ylempi muotoilu siis blokkaa tämän aluksi (kaikki kuvat ylemmällä säännöstöllä)*/
+    }
+    .yks {
+        background: linear-gradient(salmon, lightblue, salmon);
+        padding: 10px;
+    }
+
+    .uniikki {
+        padding: 20px
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="yks" id = "uniikki">
+    <h1>Viikko 1: Oppimispäiväkirja</h1> <!-- kuusi tasoa H:ta, eri otsikkotyypit-->
+    <p>
+      Lataa koodiesimerkkejä varten tehty komponentti <a href="./assets/components/html-css-viewer.js">täältä</a> ja fontti <a href="./assets/fonts/FontWithASyntaxHighlighter-Regular.woff2">täältä</a>
+    </p>
+    <ul>
+        <li> H1-H6 tagit on otsikoille
+        <li> p tagi on leipätekstille
+        <li>img tagi on kuville (muista lisätä srcstrb)</
+    </ul>
+    </div>
+
+    <ol>
+        <h3>Mun lempi HTML elementit </h3>
+            <li> h1 elemenetti
+            <li> img elemenetti
+            <li>meta elemenetti
+    </ol>
+
+    <h2>Tällä viikolla opin:</h2>
+    <ul>
+        <li>
+          Sivujen (esimerkiksi tämän sivun) lähdekoodin voi nähdä esim. kirjoittamalla <code>view-source:</code> sivun URLin alkuun.
+        </li>
+        <li>[Asia 2]</li>
+        <li>[Asia 3]</li>
+    </ul>
+    <img clas="Halloween" src="./assets/img/medievalhalloween.jpg"> <!-- class nimeää CSS:ää varten-->
+
+    <button>
+        HELLO <!-- NAPPI-->
+    </button>
+
+
+    Tässä on koodiesimerkki:
+    <html-css-viewer preview>
+      <template>
+        <style>
+          .example { 
+            color: red; 
+          }
+        </style>
+        <div class="example">
+          Hei, maailma!
+        </div>
+      </template>
+    </html-css-viewer>
+    
+    <h2>Reflektio:</h2>
+    <p>[Reflektoi oppimaasi, sekä pohdi viikon aikana käsiteltyjä asioita]</p>
+    
+    <nav>
+        <a href="viikkoX-1.html">← Edellinen viikko</a> |
+        <a href="viikkoX+1.html">Seuraava viikko →</a>
+    </nav>
+</body>
+</html> <!-- htlm-elementin sulkeminen-->
