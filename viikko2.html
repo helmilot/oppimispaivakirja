@@ -18,12 +18,57 @@
         font-family:'Courier New'
       }
 
+      .example1 {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.example1 h3 {
+ font-size: 3em;
+ color: rgb(7, 7, 7);
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
 
     </style>
 </head>
 <body>
-    <div class="yks" id = "uniikki">
+    <div class="yks">
     <h1>Viikko 2: Oppimispäiväkirja</h1> <!-- kuusi tasoa H:ta, eri otsikkotyypit-->
+  </div>
 
     <h2>Tällä viikolla opin:</h2>
     <ul>
@@ -57,8 +102,6 @@
       Pyrin viikonloppuna syventymään siihen miten saisin hyödyllisiä koodin pätkiä myös mukaan tähän opintopäiväkirjaan.
     </p>
 
-
-    </div>
     <nav>
         <a href="viikko1.html">← Edellinen viikko</a> |
         <a href="viikko3.html">Seuraava viikko →</a>
