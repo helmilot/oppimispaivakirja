@@ -53,6 +53,19 @@
       Postikeskuksilla on tiedossa IP-osoitteet, keskus hakee koneelta sen internet sivun mitä haetaan ja palauttaa sivun tietokoneeseen.
       DNS nimipalvelimet muuttamat IP-osoitteen ihmisen luettavaksi
 
+      <h4>Mitä tarvitaan nettisivuja varten? Miten selain toimii?</h4>
+      Ensinnäkin tarvitsemme paikan missä nettisivut ovat: palvelin/ serveri. Ostetaan myös jostain domain (Esim. GRRR:llä Zoner).
+      WWW on http-protokollalla (Hypertext, Transfet protocol) toimiva eli verkkosivukokonaisuus on joka on linkittynyt.
+      Hyperteksti ei ole staattista tekstiä, vaan tarkoittaa että siinä on linkkejä mukana.
+    </p>
+    <p>Selain poistaa sähköpostiosoitteen alkuosan (http/ https).
+      Selain on esimerkiksi koneen laskimen tapaan ohjelma. 
+      Lähettää siis protokollan mukaisen get pyynnön ip osoitteeseen palvelimelle, Anna tämä html file joka on kytketty osoitteeseen.
+      DNS lookup (kääntää domainin ip osoitteeksi). 404-sivu: HTML-fileä ei löydy.
+      Kun file saatu, luetaan vasemmalta oikealle ylhäältä alas. Sitten rendaa HTML (leikkaa ei näkyväksi tarkoitetu pois näkymästä)
+      Css tyyli määrittelee ulkoasua. 
+      Ei safari  crome/ Firefox  safarissa ei kaikkia uusia ominaisuuksia ja saattaa näyttää eriltä (päivittyy vain kun päivität koneen käyttiksen eikä reaaliajassa)
+      
     </p>
     
     <nav>
