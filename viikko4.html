@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Viikko 4 - Oppimispäiväkirja</title> 
     <script type="module" src="./assets/components/html-css-viewer.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> 
+
     <style>
       body {
         background-color: rgb(198, 173, 245);
@@ -18,13 +26,77 @@
         font-family:'Courier New'
       }
 
+      a:hover {
+      background-color: gold;
+      }
+
+      .shimmer {
+        text-shadow: rgb(39, 36, 27) 1px 0 10px;
+      }
+
+      a {
+      background-color: rgb(194, 142, 245);
+      transition: background-color 0.5s;
+      }
+
+        h1,h2,h3
+        {
+        font-weight: normal;
+        }
 
     </style>
 </head>
 <body>
     <div class="yks" id = "uniikki">
     <h1>Viikko 4: Oppimispäiväkirja</h1> <!-- kuusi tasoa H:ta, eri otsikkotyypit-->
-    <p>Päivittyy myöhemmin...</p>
+
+    <p> <h2>Tällä viikolla opin:</h2>
+      <ul>
+          <li>CSS hoverista ja media queries</li>
+          <li>Typografiasta</li>
+          <li>Faviconeista sekä varjoista</li>
+          <li>Mielenkiintoisia nettisivuja muistiin (unohtui aiemmin)</li>
+          <li>Lisäksi mietteitä nettisivutehtävän edistymisestä</li>
+      </ul></p>
+
+      <h3>CSS hover ja media queries</h3>
+      <p> Hover tarkoittaa siis sitä, kun hiiri liikkuu halutun elementin päälle, joka muuttuu sitten halutusti. 
+        Hoveria käytetään usein linekissä, esim muuttuu vihreeksi ja poistaa alleviivauksen. Nopea kokeilu:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover">selkeä hover-ohje! </a>
+        Kuitenkin huomattavaa tässä on, että se toimii vain desktopilla, mutta puhelimessa toiminnallisuus ei tule esille.
+        Mobiilioptimointi, tarkoittaanettä tietyn koon jälkeen sisältö järjestäytyy sarakkeisiin (MEDIA QUERIES).
+        Esimerkki kaavasta -> @media (max-width: 1250 px) {.flex {Direction: column;}}. 
+        Inspectorissa on toiminnallisuus jossa on ikään kuin iphonen ja tabletin kuva.
+        Tässä voi testailla miltä näyttää mobiilissa ja koneella kun kääntelee
+      </p>
+
+      <h3>Typografiasta</h3>
+      <p> Puhuimme erikoismerkkien, kuten samll capseista. Tämä onnistuu spanin (class) avulla. 
+        Huomioitavaa on, että käytetyssä fontissa pitää tällöin olla haettu erikoismuotoilu, muuten kone piirtää sen omalla tavallaan.
+        Itse fontin tuominen nettisivulle onnistuu @font-face avulla, joka näyttää kaikille halutun kirjainmuotoilun. 
+        Siis pelkästään font familyn kirjoittaminen koodiin ei suoraan näytä fonttia eri koneella katsojalle, jos hänellä ei ole kyseistä koneellaan.
+        Google fonts on hyvä tapa etsiä ja ladata fonttjea. Yksi tapa on 1) get font 2) get emed code, jota ei kuitenkaan Googlen politiikan takia suositella.
+        Ladataan fontti mielummin koneelle ja kytketään se tätä kautta nettisivulle. Koneelta ttf muotoinen fontti pitää muuttaa woff2 muotoon.
+        Tämä onnistuu esimerkiksi <a href="https://transfonter.org/"> transfonter generaattorin </a>avulla. 
+        Hyvänä huomiona fonteista ja muotoilusta oli myös se, että H-otsikot on boldattu automaattisesti.
+        Jos ei tätä halua, pitää vapauttaa boldauksesta erikseen. Sitä kokeiltiin tällä sivulla H1:een. Ohje löytyy
+        Tämä onnistuu esimerkiksi <a href="https://www.sitepoint.com/community/t/how-do-you-unbold-headers/1684"> täältä. </a>
+      </p>
+
+      <div class="shimmer">
+      <h3>Faviconit ja varjot</h3>
+      </div>
+      <p>Faviconit ovat nettisivun verkkosivun osoitteen vieressä selaimessa näkyviä kuvakkeita. 
+      Niitä voi tehdä itse tietokoneella 16x16 px kuvina. Tallennus tapahtuu gif tai png muotoon. 
+      Yksi vaihtoehto on esimerkiksi käyttää <a href="https://realfavicongenerator.net/"> realfavicongeneratoria.</a>
+      Kävimme lisäksi läpi varjojen luomista (Box Shaddow ja Text Shaddow), jota kokeilin tämän kappaleen otsikolle.
+      </p>
+
+      <h3>Lista mieleenkiintoisista sivuista muistiin</h3>
+      <p> Ja oli sitä tosi puheissa Heikin kanssa kurssin alussa, että aloitettava olisi some-lakko.
+      </p>
+
+
     </div>
     <nav>
         <a href="viikko3.html">← Edellinen viikko</a> |
