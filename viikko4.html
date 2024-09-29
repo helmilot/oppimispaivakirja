@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Viikko 4 - Oppimispäiväkirja</title> 
     <script type="module" src="./assets/components/html-css-viewer.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff"> 
+
 
     <style>
       body {
@@ -39,7 +33,7 @@
       transition: background-color 0.5s;
       }
 
-        h1,h2,h3
+        h1,h2,h3, h4
         {
         font-weight: normal;
         }
@@ -75,7 +69,11 @@
         Huomioitavaa on, että käytetyssä fontissa pitää tällöin olla haettu erikoismuotoilu, muuten kone piirtää sen omalla tavallaan.
         Itse fontin tuominen nettisivulle onnistuu @font-face avulla, joka näyttää kaikille halutun kirjainmuotoilun. 
         Siis pelkästään font familyn kirjoittaminen koodiin ei suoraan näytä fonttia eri koneella katsojalle, jos hänellä ei ole kyseistä koneellaan.
-        Google fonts on hyvä tapa etsiä ja ladata fonttjea. Yksi tapa on 1) get font 2) get emed code, jota ei kuitenkaan Googlen politiikan takia suositella.
+        Google fonts on hyvä tapa etsiä ja ladata fonttjea. 
+      </p>
+        
+        <p> 
+        Yksi tapa on 1) get font 2) get emed code, jota ei kuitenkaan Googlen politiikan takia suositella.
         Ladataan fontti mielummin koneelle ja kytketään se tätä kautta nettisivulle. Koneelta ttf muotoinen fontti pitää muuttaa woff2 muotoon.
         Tämä onnistuu esimerkiksi <a href="https://transfonter.org/"> transfonter generaattorin </a>avulla. 
         Hyvänä huomiona fonteista ja muotoilusta oli myös se, että H-otsikot on boldattu automaattisesti.
@@ -89,13 +87,66 @@
       <p>Faviconit ovat nettisivun verkkosivun osoitteen vieressä selaimessa näkyviä kuvakkeita. 
       Niitä voi tehdä itse tietokoneella 16x16 px kuvina. Tallennus tapahtuu gif tai png muotoon. 
       Yksi vaihtoehto on esimerkiksi käyttää <a href="https://realfavicongenerator.net/"> realfavicongeneratoria.</a>
-      Kävimme lisäksi läpi varjojen luomista (Box Shaddow ja Text Shaddow), jota kokeilin tämän kappaleen otsikolle.
+      Kävimme lisäksi läpi varjojen luomista (Box Shaddow ja <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow"> Text Shaddow</a>), jota kokeilin tämän kappaleen otsikolle.
       </p>
 
       <h3>Lista mieleenkiintoisista sivuista muistiin</h3>
-      <p> Ja oli sitä tosi puheissa Heikin kanssa kurssin alussa, että aloitettava olisi some-lakko.
-      </p>
+      <p> Ja oli sitä tosi puheissa Heikin kanssa kurssin alussa, että aloitettava olisi some-lakko. Onnistui hävettävän huonosti, joka
+        hieman tässä vaiheessa kaduttaa. Ajatuksena olisi ollut pohtia mitä tapahtuu jos aikaa ei käytä tutuilla somealustoilla.
+        Samaan hengen vetoon Heikki jutteli arkistoista ja erilaisista nettisivuista, joihin kannattaa tutustua. Luimme tällä viikolla 
+        <a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/"> 
+          artikkelin</a>, jossa puhuttiin entin indivisualismin katoamisesta ja tätä kautta korostettiin oman äänen nostamista omien nettisivujen avulla.
+          Artikkeli oli todella hyvä ja inspiroi paljon uuteen viikkoon. Haluaisinkin vielä kurssin viimeisillä viikoilla sekkailla enemmän netissä.
+          Ehdin tehdä sitä jonkin verran tällä viikolla ja tässä muutama tärkeä sivu matkaltani:
 
+        <h4>Hyviä ohjesivuja ja tärkeitä paikkoja</h4>
+        <ul>
+          <li><a href="https://graphemica.com/unicode/characters/page/34"> Symboleja, Graphemica</a></li>
+          <li><a href="https://www.ycombinator.com/"> Hacker News, Y combinator</a></li>
+          <li><a href="https://beautifulwebtype.com/"> Fontteja, Beautiful fonts</a></li>
+          <li><a href="https://grid-drawing-club.netlify.app/"> Grid Drawing Club</a></li>
+      </ul>
+
+
+      <h4>Muuten vain mielenkiintoisia, inspiraatioksi</h4>
+      <ul>
+        <li><a href="https://sites.elliott.computer/"> Hassuja sivuja, Elliot</a></li>
+        <li><a href="https://search.marginalia.nu/explore/random"> Sekalaisia sivuja, Marginalia</a></li>
+        <li><a href="https://wiby.me/"> Vanhoja sivuja, Wiby</a></li>
+        <li><a href="https://sarajoy.dev/#gosara"> Sara Joy</a></li>
+        <li><a href="https://a-website-is-a-room.net/"> Koottuna kiinnostavia sivuja</a></li>
+        <li><a href="https://diagram.website/"> Diagram</a></li>
+        <li><a href="https://exoportal.xyz/"> Iglooghost (artisti) nettisivut</a></li>
+        <li><a href="https://lana-pomodoro-timer.netlify.app/"> Pomodoroajastin</a></li>
+        <li><a href="https://6mon.hotglue.me/">Erikoinen paikka</a></li>
+    </ul>
+
+    <h3>Nettisivutehtävän edistyminen</h3>
+    <p> Puhuimme erikoismerkkien, kuten samll capseista. Tämä onnistuu spanin (class) avulla. 
+      Tarkemman visuaaliset askeleet löytyvät toisesta <a href="https://lotjonh1.myportfolio.com/koe-1"> opintopäiväkirjasta.</a>
+      Kerkesin kunnolla aloittaa tehtävän vasta tällä viikolla, eli hävettävän myöhässä. Olen kuitenkin ylpeä mitä viikon aikana
+      on kerennyt tapahtumaan. Ainoana ongelmana on se, että en saa lopputulosta näkymään vielä netissä oikein. Vaatii hieman säätöä.
+      Tuntuu kuitenkin siltä, että isoja harppauksia syntyi myös koodausrintamalla ja aloin saamaan kiinni html- ja css-maailmasta!
+      Tarkemmat kuvat ja projektin tallenus löytyy Adoben sivuilta. Minulle on henkilökohtaisesti tärkeää saada muistot talteen
+      hyvin visuaalisessa muodossa.
+    </p>
+
+    <p> Olen kokonaisuudessaan hyvin iloinen siitä, miten sain otettua itseäni niskasta kiinni vaikeimpaan vaiheeseen, eli koodaamiseen,
+      ryhtymisessä. On ollut vaikeaa saada aivoja pois muista velvollisuuksista ja 100% keskittyneeksi tähän. Syynä voi olla kokemus viime syksyltä
+      (Pythonin perusteet), joka vei valtaosan vapaa-ajastani. Muistan kuinka upputunut tehtäviin olin. Se hieman hirvitti. Olen kuitenkin tällä viikolla
+      reflektoinut paljon lukeamiamme tekstejä. Erityisesti
+      <a href="https://www.robinsloan.com/notes/home-cooked-app/"> kurssin ensimmäinen artikkeli</a> kuvasi hyvin sitä, miten nettisivuprojekteja ei tarvitse 
+      ottaa liian vakavasti (ammattimaisesti). Voi kokeilla ja fiilistellä. Olen kurssin aikana huomannut olevani koulun suhteen hyvin 
+      mustavalkoinen. Tästä syystä kurssi on ollut myös erinomainen paikka harjoitella, sitä miten olla vaatimatta itseltään 200 prosenttia.
+    </p>
+
+    <p> Mustavalkoisuus tarkoittaa omalla kohdallani siis sitä, että annan joko kaikkeni tai melkein luovutan. Pelkäsin kurssin luisuvan
+      luovuttamisen tielle, mutta ilokseni huomasin että kurssin materiaali on ajanut minua kohti terveellisempää ajattelua.
+      Näin ollen nettisivutehtävä tuntuu astetta kevyemmältä. Uskon myös, että paneiden poistumisella saatan yllättää itseni positiivisesti.
+      Toisaalta en pety jos siitä ei tule täydellinen. Koen, että tämän kurssin taitoja haluaa jatkaa jalostaen myös tulevaisuudessa.
+    </p>
+
+      </p>
 
     </div>
     <nav>
