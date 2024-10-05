@@ -18,13 +18,126 @@
         font-family:'Courier New'
       }
 
+      h2,h3, h4
+        {
+        font-weight: normal;
+        }
+        a:hover {
+        background-color: rgb(254, 255, 255);
+        box-shadow:
+            0 0 80px 30px #fff,  /* inner white */
+            0 0 180px 60px rgb(210, 165, 210), /* middle magenta */
+            0 0 140px 90px rgb(149, 157, 183); /* outer cyan */
+      }
+
+      a {
+      background-color: rgb(95, 106, 163);
+      transition: background-color 0.5s;
+      color:rgb(31, 31, 63);
+      }
 
     </style>
 </head>
 <body>
     <div class="yks" id = "uniikki">
     <h1>Viikko 5: Oppimispäiväkirja</h1> <!-- kuusi tasoa H:ta, eri otsikkotyypit-->
-    <p>Päivittyy myöhemmin...</p>
+    <p> <h2>Tällä viikolla opin:</h2>
+
+      <ul>
+          <li>CSS tyyleistä ja elenteistä</li>
+          <li>CSS:n ja PDF:n yhteispelistä</li>
+          <li>Netin ja some vaikutuksesta omaan ajatusmaailmaan</li>
+          <li>Etukäteen suunnittelemattomasta tekemisestä</li>
+
+      </ul></p>
+
+      <h3>CSS tyylit ja elementit</h3>
+      <p> Olen enemmän avannut Adoben puolella julisteprojektia, mutta haluan koota tähän
+        vielä listan siitä mitä eri toiminnallisuuksia opin viikon aikana ja pääsin syventymään:
+
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"> Reunoja</a></li>
+          <li><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_square"> Perusneliö</a></li>
+          <li><a href="https://cssgradient.io/"> Gradientteja</a></li>
+          <li><a href="https://www.linkedin.com/pulse/12-examples-css-gradients-elevate-your-web-design-abhishek-garg-"> Gradientteja lisää</a></li>
+          <li><a href="https://www.youtube.com/watch?v=4ALLynsZ0u0"> Mielenkiintoisia muotoja, Kevinin video</a></li>
+          <li><a href="https://alvaromontoro.com/blog/68042/shapes-in-css"> Lisää mielenkiintoisia muotoja</a></li>
+          <li><a href="https://css-generators.com/flower-shapes/"> Myös täältä hauskoja muotoja</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur"> Blurrifiltteri</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"> Läpinäkyvyys</a></li>
+          <li><a href="https://www.magicpattern.design/tools/css-backgrounds"> Taustakuvia</a></li>
+          <li><a href="https://css-pattern.com/">Lisää patterneja</a></li>
+          <li><a href="https://codersblock.com/blog/creating-glow-effects-with-css/">Halo-efekti</a></li>
+          <li><a href="https://www.geeksforgeeks.org/css-font-border/">Tekstin efekteistä</a></li>
+      </ul>
+
+      Lisäksi opettelin muita tyyli- ja muototekniikoita, joita pääsin laajalti hyödyntämään julisteessa.
+      Tarkoituksena oli haastaa itseä ja kokeilla mihin kaikkeen CSS taipuu. Sainkin yllättävän rikkaan lopputuloksen aikaan.
+      Haastetta tuotti esimerkiksi se miten tekstin saa asettumaan vertikaalisesti ja "tippumaan alaspäin".
+      Tämä onnistui komennolla br. <br>
+      T <br>
+      E <br>
+      S <br>
+      T <br>
+      I <br>
+      </p>
+
+      <h3>CSS:n ja PDF:n yhteispeli</h3>
+      <p> Tällä viikolla pääsin myös syventymään siihen mitä yhteys- ja ongelmakohtia. Juttelimme tästä myös paljon Heikin kanssa
+        torstaina kun ongelmat ilmenivät tallennusvaiheesa. Huomasimme, että PDF ei esimerkiksi ymmärrä maskeja tai muuttujia 
+        samalla tavalla kuin nettiympäristö. Heikki korostikin hyvin sitä ettei CSS ole suunniteltu vietäväksi sen toimintaympäristön
+        ulkopuolelle eli esimerkiksi juuri PDF on hyvä esimerkki tästä. Juttelin aiheesta myös kuuluisan Chat Peten kanssa.
+        Kysyin vielä syitä sille mikseivät maskit toimi PDF:lle tulostettaessa. Syynä oli Peten mukaan se, että
+        "PDF muuntaminen (esim. selaimen tulostus-toiminnolla tai muilla generaattoreilla) ei usein tue kaikkia moderneja web-teknologioita
+         tai visuaalisia efektejä."
+        Pete lisäsi, että PDF noudattaa erilaista grafiikkamallia kuin selaimet, mistä syystä CSS:n monimutkaisemmat ominaisuudet
+        eivät välttämättä renderöidy oikein PDF:lle. Syitä tähän on muun muassa Chat gtb:n mukaan:
+
+        <ul>
+          <li>PDF-generaattorin rajoitteet: Kaikki PDF-generaattorit eivät tue moderneja CSS-ominaisuuksia.</li>
+
+          <li>Erilainen renderöintimoottori: PDF
+          muuntaminen käyttää usein eri renderöintimoottoria kuin selain, eikä tämä moottori välttämättä tue samoja graafisia ominaisuuksia.</li>
+
+          <li>Staattinen luonne: PDF
+            ovat staattisia tiedostoja, kun taas CSS-maskit on suunniteltu toimimaan dynaamisessa, vektorigrafiikkaan perustuvassa ympäristössä kuten selaimissa.</li>
+
+      </ul>
+
+        Ongelmien ratkominen ja samannäköisen lopputuloksen PDF-ystävälinen tavoittelu kuitenkin opetti paljon ja koen kehittyneeni CSS:n 
+        ymmärtämisessä tehtävän takia paljon! Odotankin innolla miltä valmis juliste tulee näyttämään.
+
+      </p>
+
+      <h3>Netin ja somen vaikutus ajatus- ja käytösmalleihimme</h3>
+      <p> Luettavaksi tälle viikolle oli mielenkiintoinen <a href="https://drive.google.com/file/d/1ZJ5t0OnJO2F0n-Me1eZsihpT-XEkr1A8/view"> pätkä</a>
+        kirjasta The Methaphysics of Virtual Reality. Tekstissä puhuttiin muun muassa siitä, miten tietokonelähteinen ajattelu on muuttanut meitä.
+        Esimerkiksi käsinkirjoittamisen ja konekirjoittamisen väliset erot korostuvat siinä missä tehokkuus tietokoneiden kanssa nousee keskiöön.
+        Tekstin mukaan itseisarvoksi muuttuu tekstin laadun sijasta tuotetun materiaalin määrä. 
+      </p>
+
+      <p> Vaikka teksti on peräisin 90-luvulta, ovat teemat vain korostuneet nykyisessä verkkoympäristössämme. Juttelimmekin paljon tästä tunnilla.
+        Pohdimme sitä, mitä esim. pahamaineinen P e t e tekee luovuudellemme ja viisaudellemme, jos ulkoistamme liikaa toimintoja tekoällyn käsiin.
+        Kokonaisuudessaan mieleeni tunnilla tuli yliopiston rikkaus omalle ajattelulleni. Nautin paljon kurssin aikana saaduista lukuläksyistä 
+        ja näistä juttutuokioista, jossa meidät on laitettu kyseenalaistamaan tyypillisiä ympäristöjämme. Mielestäni se on ollut yksi kurssin antamista
+        rikkauksista. Pidän myös siitä, että kurssi on jatkuvasti haastanut omaa ajatusmaailmaani monella eri tasolla. Olen pohtinyt syvemmin omia
+        käsityksiäni ympäröivästä maailmasta ja rikastuttanut näin mieltäni kriittisen ajattelun kautta. 
+      </p>
+
+      <h3>Tekeminen kokeilemalla</h3>
+      <p> Viikko on ollut myös siitä merkityksellinen minulle, että tein jotain mihin en ole pitkiin aikoihin tottunut: kurssityön ilman suunnitelmaa.
+        Tämä oli itselleni merkittävä etappi, koska praktiikkani on perustunut täsmälliselle suunnittelulle ja hallinnalle.
+        Olen huomannut kuitenkin jo viime vuonna suorittavani kursseja kaavassa. Tiedän vahvuuteni ja heikkouteni. Niiden avulla on ollut helppo
+        optimoida omaa tekemisestä tietynlaisessa putkessa. Koulutöistä on tullut itseäni miellyttäviä lopputuloksia mutta ahaa elementti itselleni
+        on jäänyt puuttumaan. En ole niinkään nauttinut tekemisestä vaan ajatuksesta valmiista lopputuloksesta. 
+      </p>
+      <p> Kuitenkin tällä viikolla löysin takaisin tekemisen pariin ja päädyin käyttämään paljon aikaa yksityiskohtien hiomiseen. 
+        Intuitiivisella tekemisellä oli positiivisia vaikutuksia tekemiseeni ja suunnittelu tapahtui pienissä paloissa matkan varrella. 
+        Koen oppiineeni itsestäni paljon tämän työn (juliste) avulla ja yllättäneeni itseni positiivisesti. Olen iloinen lopputuloksesta ja pääsin
+        haastamaan itseäni juuri tarvitsemallani tavalla!
+      </p>
+
+
     </div>
     <nav>
         <a href="viikko4.html">← Edellinen viikko</a> |
